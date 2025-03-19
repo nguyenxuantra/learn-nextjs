@@ -36,9 +36,9 @@ export default function Home() {
           />
           <ol>
             <li>
-              Get started by editing <code>pages/index.tsx</code>.
+              Trà đập zai.
             </li>
-            <li>Save and see your changes instantly.</li>
+            <li>Trà quá uy tín</li>
           </ol>
 
           <div className={styles.ctas}>
