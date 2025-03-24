@@ -38,7 +38,7 @@ export default function Home() {
             <li>
               Trà đập zai.
             </li>
-            <li>Trà quá uy tín</li>
+            <li>Trà quá uy tín.</li>
           </ol>
 
           <div className={styles.ctas}>
