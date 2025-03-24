@@ -33,7 +33,7 @@ const ParamCacheState = ({ post }: ParamCacheStateProps) => {
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-    context.res.setHeader('Cache-Control', 's-maxage=5');
+    context.res.setHeader('Cache-Control', 's-maxage=5, stale-while-revalidate=5');
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
 
@@ -49,7 +49,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
     const data = await response.json();
     return {
         props: {
-
             query: context.query,
             post: data.data
         }
