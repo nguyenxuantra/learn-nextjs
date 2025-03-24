@@ -33,7 +33,7 @@ const ParamCacheState = ({ post }: ParamCacheStateProps) => {
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-    context.res.setHeader('Cache-Control', 's-maxage=5');
+    context.res.setHeader('Cache-Control', 's-maxage=5, stale-while-revalidate');
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
 
